@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>de.davidorlea.backup</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/Users/johndoe/backup/backup.sh</string>
+            <string>--include=/Users/johndoe/backup/settings/include.conf</string>
+            <string>--exclude=/Users/johndoe/backup/settings/exclude.conf</string>
+            <string>--lock=/Users/johndoe/backup/.pid</string>
+            <string>--transfer-log=/Users/johndoe/backup/.lastlog</string>
+            <string>--syslog</string>
+            <string>--destination=server:/some/dir</string>
+        </array>
+        <key>StartInterval</key>
+        <integer>3600</integer>
+        <key>ExitTimeOut</key>
+        <integer>0</integer>
+        <key>ProcessType</key>
+        <string>Background</string>
+    </dict>
+</plist>
